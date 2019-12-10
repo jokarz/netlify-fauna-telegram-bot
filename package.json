@@ -1,0 +1,18 @@
+{
+  "name": "toto",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "faunadb": "^2.10.0",
+    "telegraf": "^3.34.1"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^1.6.3"
+  }
+}

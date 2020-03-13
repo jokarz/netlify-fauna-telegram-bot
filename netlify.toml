@@ -1,6 +1,7 @@
 [build]
   functions = "functions"
   publish = "public"
+  command = "npm run build"
 [template.environment]
   FAUNA_SECRET_KEY = "FaunaDB secret key here"
   TELEGRAM_BOT_TOKEN = "Telegram bot token here"

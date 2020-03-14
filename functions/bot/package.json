@@ -1,7 +1,8 @@
 {
-  "name": "netlify-fauna-telegram-bot",
+  "name": "bot",
   "version": "1.0.0",
   "description": "",
+  "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -9,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "netlify-lambda": "^1.6.3"
+    "faunadb": "^2.13.0",
+    "telegraf": "^3.36.0"
   }
 }

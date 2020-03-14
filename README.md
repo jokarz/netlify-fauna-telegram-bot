@@ -1,6 +1,6 @@
 # Serverless Telegram Bot
 
-Create serverless Telegram Bot with DB to keep track of users using Netlify Functions and FaunaDB
+Create a serverless Telegram Bot with database to keep track of users using Netlify Functions and FaunaDB
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/jokarz/netlify-fauna-telegram-bot)
 
@@ -17,19 +17,31 @@ On FaunaDb site, create a collection with the name ```user``` (optionally, gener
 
 ## Deploy to Netlify
 
-Deploy to Netlify either by linking to this repository manually or by clicking the Deploy to netlify.
+Deploy to Netlify either by linking to this repository manually or by clicking the "Deploy to netlify" above.
 
-Thereafter, fill in the environment variables ```TELEGRAM_BOT_TOKEN```, ```FAUNA_SECRET_KEY``` with the token and the secret key obtained respectively
+Remember to fill in the environment variables on netlify - ```TELEGRAM_BOT_TOKEN```, ```FAUNA_SECRET_KEY``` with the token and the secret key obtained respectively
 
 ## Hooking up the Bot
 
-Once the above are done, you need to specify and tell telegram where your bot should direct the messages it received to. Do so by simply visiting this url
+Therafter, you need to specify and tell telegram where your bot should direct the messages it received to. Do so by simply visiting this url (without the ```{```, ```}```)
+
 ```
-https://api.telegram.org/bot{your_bot_token}/setWebhook?url={url_of_the_Netlify_Function}
+https://api.telegram.org/bot{your_bot_token}/setWebhook?url={your_netlify_domain_url}/api/bot
 ```
+
+If it is setup correctly it should reponse back with
+
+```json
+{
+  "ok": true,
+  "result": true,
+  "description": "Webhook was set"
+}
+```
+
 Afterwhich, YOU ARE DONE!🎉🎉
 
-Try typing ```/start``` to your bot and watch as the user ID of the Telegram user is stored inside your FaunaDB
+Try typing ```/start``` to your bot and watch as the user ID of the Telegram user is stored inside your FaunaDB database
 
 # Extending Telegram Bot Functionality
 

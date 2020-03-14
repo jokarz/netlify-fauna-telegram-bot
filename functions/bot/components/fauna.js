@@ -13,7 +13,7 @@ exports.newUser = (id) => {
     ).then(ret => {
       res(true)
     }).catch(err => {
-      rej(false)
+      res(false)
     });
   })
 }

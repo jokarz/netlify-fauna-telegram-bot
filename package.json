@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "netlify-lambda": "^1.6.3"
+    "netlify-lambda": "^2.0.1"
   }
 }

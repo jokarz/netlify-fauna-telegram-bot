@@ -2,7 +2,6 @@
   functions = "functions"
   command = "netlify-lambda install && mkdir ./public"
 [template.environment]
-  FAUNA_SECRET_KEY = "FaunaDB secret key here"
   TELEGRAM_BOT_TOKEN = "Telegram bot token here"
 [[redirects]]
   from = "/api/*"

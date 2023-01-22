@@ -1,6 +1,6 @@
 {
   "name": "bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "bot.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "faunadb": "^2.13.0",
-    "telegraf": "^3.36.0"
+    "faunadb": "^4.7.1",
+    "telegraf": "^4.11.2"
   }
 }
